@@ -3,14 +3,14 @@ COLOR PALETTE
 Choose a color palette and paste the hex codes here to use below
 https://coolors.co/
 
-#233D4D - bluish black (header, footer)
-#FE7F2D - orange
-#FCCA46 - yellow
-#A1C181 - greyish lime
-#619B8A - blue with greenish tones
+#233D4D - bluish black (header)
+#FE7F2D - orange (image overlay)
+#FCCA46 - yellow (project background)
+#A1C181 - greyish lime (button hover)
+#619B8A - blue with greenish tones (button background)
 
-#343434 Dark color for fonts on a light background
-#F7FFF7 light color for fonts on a dark background
+#343434 Dark color for fonts on a light background (footer)
+#F7FFF7 light color for fonts on a dark background 
 
 */
 
@@ -70,7 +70,6 @@ html {
     background-color: #FE7F2D;
     border-radius: 12px;
   }
-  
   .container:hover .overlay {
     opacity: .92;
   }
@@ -185,7 +184,7 @@ html {
       color: #F7FFF7;
   }
   .project-item {
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .project-item h3 {
     margin-top: 0;
