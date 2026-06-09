@@ -69,7 +69,8 @@ html {
   border-radius: 0 0 12px 12px;  /* round only the bottom corners */
   opacity: 0.92;
 }
-  .container:hover .overlay {
+
+.container:hover .overlay {
   height: 96.5%;       /* expands upward on hover */
 }
 
