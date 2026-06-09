@@ -80,7 +80,7 @@
           </p>
 
           <!-- Project 1 -->
-         <section class="project-item">
+          <section class="project-item">
             <div class="container">
               <img
                 src="tableau-report.PNG"
