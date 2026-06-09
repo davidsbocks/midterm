@@ -56,35 +56,33 @@ html {
     height: auto;
   }
   
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 96.5%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    /* background-color: #121e25; */
-    background-color: #FE7F2D;
-    border-radius: 12px;
-  }
+ .overlay {
+  position: absolute;
+  bottom: 0;           /* anchor to bottom instead of filling all sides */
+  left: 0;
+  right: 0;
+  height: 0;           /* starts collapsed */
+  width: 100%;
+  overflow: hidden;    /* hides the text until the overlay expands */
+  transition: height 0.5s ease, opacity 0.5s ease;
+  background-color: #FE7F2D;
+  border-radius: 0 0 12px 12px;  /* round only the bottom corners */
+  opacity: 0.92;
+}
   .container:hover .overlay {
-    opacity: .92;
-  }
-  
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+  height: 96.5%;       /* expands upward on hover */
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;          /* prevents text from overflowing on narrow containers */
+}
   a {
     text-decoration: none;
   }
